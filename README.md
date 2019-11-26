@@ -50,9 +50,9 @@ graph TD;
     MI[MentorInterface] --- DC[DemoCentral];
     DC -.- DD[DemoDownloader];
     DC -.- DFW[DemoFileWorker];
-    DFW -.- RFO["MatchEntities Fanout"];
-    RFO -.- MDBI;
-    RFO -.- SO;
+    DFW -.- MEF["MatchEntities Fanout"];
+    MEF -.- MDBI;
+    MEF -.- SO;
     
     CDBI --- DFW;
 
@@ -78,8 +78,9 @@ graph TD;
     click DFW "https://gitlab.com/mentorgg/csgo/demofileworker";
     click DD "https://gitlab.com/mentorgg/csgo/demodownloader";
     click MDBI,MDB "https://gitlab.com/mentorgg/csgo/matchdbi";
-    click RC,RFO "https://gitlab.com/mentorgg/engine/rabbitmqcluster";
-    click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator"
+    click RC "https://gitlab.com/mentorgg/engine/rabbitmqcluster";
+    click MEF "https://gitlab.com/mentorgg/csgo/matchentities";
+    click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator";
 
 
     
