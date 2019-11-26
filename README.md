@@ -64,6 +64,11 @@ graph TD;
 
     RC["🐰 RabbitMQCluster"];
 
+    subgraph Legend
+        AMQPP["AMQP Producer"] -.- AMQPC["AMQP Consumer"];
+        HTTPC["HTTP Client"] --- HTTPS["HTTP Server"];
+    end
+
     classDef db fill:white;
     classDef queue fill:pink;
     class RFO queue;
