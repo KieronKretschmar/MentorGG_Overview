@@ -64,10 +64,6 @@ graph TD;
 
     RC["🐰 RabbitMQCluster"];
 
-    subgraph Legend
-        AMQPP["AMQP Producer"] -.- AMQPC["AMQP Consumer"];
-        HTTPC["HTTP Client"] --- HTTPS["HTTP Server"];
-    end
 
     classDef db fill:white;
     classDef queue fill:pink;
@@ -86,8 +82,12 @@ graph TD;
     click RC "https://gitlab.com/mentorgg/engine/rabbitmqcluster";
     click MEF "https://gitlab.com/mentorgg/csgo/matchentities";
     click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator";
-
-
-    
 ```
 
+```mermaid
+graph TD;
+    subgraph Legend
+        AMQPP["AMQP Producer"] -.- AMQPC["AMQP Consumer"];
+        HTTPC["HTTP Client"] --- HTTPS["HTTP Server"];
+    end
+```
