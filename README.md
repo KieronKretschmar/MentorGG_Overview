@@ -1,11 +1,14 @@
 # Overview
 
 ## Service Outline
-
-- [**MentorInterface**](https://gitlab.com/mentorgg/engine/mentor-interface)
-    REST API exposed to the internet via an Ingress, providing authentication services and access to the Mentor Engine, and aggregates data from different sources.
-- [**RabbitMQCluster**](https://gitlab.com/mentorgg/engine/rabbitmqcluster)
-    Self-hosted RabbitMQ Cluster for internal AMQP queues between services.
+- **Frontend**
+    - [**Vue-WebApp**](https://gitlab.com/mentorgg/Frontend/mentor-gg-WebApp)
+        The MENTOR.GG Vue app.
+- **Infrastructure**
+    - [**MentorInterface**](https://gitlab.com/mentorgg/engine/mentor-interface)
+        REST API exposed to the internet via an Ingress, providing authentication services and access to the Mentor Engine, and aggregates data from different sources.
+    - [**RabbitMQCluster**](https://gitlab.com/mentorgg/engine/rabbitmqcluster)
+        Self-hosted RabbitMQ Cluster for internal AMQP queues between services.
 - **CS:GO**:
     - [**DemoCentral**](https://gitlab.com/mentorgg/csgo/democentral)
         Orchestrate demo acquisition and analysis.
