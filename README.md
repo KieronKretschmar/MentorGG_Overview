@@ -1,4 +1,5 @@
 # Overview
+Below is an overview over the MENTOR.GG code repositories and service structure. See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementation](https://gitlab.com/mentorgg/documentation/implementation) for further documentation.
 
 ## Service Outline
 - **Frontend**
