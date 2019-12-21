@@ -25,8 +25,10 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
         Store, retrieve and compute situation data, e.g. misplays.
     - [**FaceitMatchGatherer**](https://gitlab.com/mentorgg/csgo/faceitmatchgatherer)
         Poll Faceit API for new matches.
-    - [**SharingCodeProjects**](https://gitlab.com/mentorgg/csgo/sharingcodeprojects)
-        Poll Steam SharingCode API for new matches.
+    - [**SharingCodeGatherer**](https://gitlab.com/mentorgg/csgo/sharingcodegatherer)
+        Poll Steam SharingCode API for new SharingCodes.
+    - [**SteamworksService**](https://gitlab.com/mentorgg/csgo/steamworksservice)
+       Translates SharingCodes into demo download urls.
     - [**ConfigurationDBI**](https://gitlab.com/mentorgg/csgo/configurationdbi)
         Provide configuration data to other services (e.g. Equipment, Ingame2Px conversion parameters).
     - [**SteamUserProjects**](https://gitlab.com/mentorgg/engine/steamuserprojects)
@@ -43,9 +45,9 @@ graph TD;
     
     MI --- SUO[SteamUserOperator];
     
-    MI --- SCO["SharingCodeGatherer 💾"];
-    SCO --- SWC[SteamworksConnection];
-    SCO -.- DC;
+    MI --- SCG["SharingCodeGatherer 💾"];
+    SCG -.- SWS[SteamworksService];
+    SWS -.- DC;
     
     MI --- FG["FaceitMatchGatherer 💾"];
     FG -.- DC;
@@ -75,7 +77,8 @@ graph TD;
 
     click MI,UDB "https://gitlab.com/mentorgg/engine/mentor-interface";
     click SUO "https://gitlab.com/mentorgg/engine/steamuserprojects";
-    click SCO,SWC "https://gitlab.com/mentorgg/csgo/sharingcodeprojects";
+    click SCG "https://gitlab.com/mentorgg/csgo/sharingcodegatherer";
+    click SWS "https://gitlab.com/mentorgg/csgo/steamworksservice";
     click CDBI,CDB "https://gitlab.com/mentorgg/csgo/configurationdbi";
     click DC "https://gitlab.com/mentorgg/csgo/democentral";
     click FG "https://gitlab.com/mentorgg/csgo/faceitmatchgatherer";
