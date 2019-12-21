@@ -51,9 +51,9 @@ graph TD;
     FG -.- DC;
     
     
-    MI --- CDBI[ConfigurationDBI];
+    MI --- CDBI["ConfigurationDBI 💾"];
     
-    MI[MentorInterface] --- DC[DemoCentral];
+    MI[MentorInterface] --- DC["DemoCentral 💾"];
     DC -.- DD[DemoDownloader];
     DC -.- DFW[DemoFileWorker];
     DFW -.- MEF["MatchEntities Fanout"];
@@ -62,11 +62,8 @@ graph TD;
     
     CDBI --- DFW;
 
-    CDBI --- CDB((ConfigurationDB));
-    MI --- MDBI[MatchDBI];
-    MI --- SO[SituationOperator];
-    SO --- SDB((SituationDB));
-    MDBI --- MDB((MatchDB));
+    MI --- MDBI["MatchDBI 💾"];
+    MI --- SO["SituationOperator 💾"];
 
     RC["🐰 RabbitMQCluster"];
 
@@ -89,6 +86,9 @@ graph TD;
     click MEF "https://gitlab.com/mentorgg/csgo/matchentities";
     click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator";
 ```
+
+
+
 
 ```mermaid
 graph TD;
