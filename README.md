@@ -43,11 +43,11 @@ graph TD;
     
     MI --- SUO[SteamUserOperator];
     
-    MI --- SCO[SharingCodeGatherer];
+    MI --- SCO["SharingCodeGatherer 💾"];
     SCO --- SWC[SteamworksConnection];
     SCO -.- DC;
     
-    MI --- FG[FaceitMatchGatherer];
+    MI --- FG["FaceitMatchGatherer 💾"];
     FG -.- DC;
     
     
@@ -95,5 +95,6 @@ graph TD;
     subgraph Legend
         AMQPP["AMQP Producer"] -.- AMQPC["AMQP Consumer"];
         HTTPC["HTTP Client"] --- HTTPS["HTTP Server"];
+        SWDB["Service with attached DB 💾"]
     end
 ```
