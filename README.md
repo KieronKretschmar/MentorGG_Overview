@@ -93,7 +93,8 @@ graph TD;
     click DFW "https://gitlab.com/mentorgg/csgo/demofileworker";
     click DD "https://gitlab.com/mentorgg/csgo/demodownloader";
     click MW1,MW2 "https://gitlab.com/mentorgg/csgo/matchwriter";
-    click DMDB,TMDB "https://gitlab.com/mentorgg/csgo/matchdb";
+    click MW1,MW2 "https://gitlab.com/mentorgg/csgo/matchwriter";
+    click MR "https://gitlab.com/mentorgg/csgo/matchretriever";
     click MDSF "https://gitlab.com/mentorgg/csgo/matchentities";
     click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator";
 ```
