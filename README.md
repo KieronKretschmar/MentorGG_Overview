@@ -8,7 +8,7 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
     - [**Vue-WebApp**](https://gitlab.com/mentorgg/Frontend/mentor-gg-WebApp)
         The MENTOR.GG Vue app.
 - **Infrastructure**
-    - [**MentorInterface**](https://gitlab.com/mentorgg/engine/mentor-interface)
+    - [**MentorInterface**](https://gitlab.com/mentorgg/engine/mentorinterface)
         REST API exposed to the internet via an Ingress, providing authentication services and access to the Mentor Engine, and aggregates data from different sources.
     - [**RabbitCommunicationLib**](https://gitlab.com/mentorgg/engine/RabbitCommunicationLib)
         Self-hosted RabbitMQ Cluster for internal AMQP queues between services.
