@@ -19,7 +19,7 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
         Download demos either from URL or file stream.
     - [**DemoFileWorker**](https://gitlab.com/mentorgg/csgo/demofileworker)
         Obtain raw match data from a demo file and enriches the result.
-    - [**MatchWriter**](https://gitlab.com/mentorgg/csgo/matchdbi)
+    - [**MatchWriter**](https://gitlab.com/mentorgg/csgo/matchwriter)
         Write match data to Match Database.
     - [**MatchRetriever**](https://gitlab.com/mentorgg/csgo/matchretriever)
         Retrieve data from Match Database.
@@ -92,7 +92,6 @@ graph TD;
     click FG "https://gitlab.com/mentorgg/csgo/faceitmatchgatherer";
     click DFW "https://gitlab.com/mentorgg/csgo/demofileworker";
     click DD "https://gitlab.com/mentorgg/csgo/demodownloader";
-    click MW1,MW2 "https://gitlab.com/mentorgg/csgo/matchwriter";
     click MW1,MW2 "https://gitlab.com/mentorgg/csgo/matchwriter";
     click MR "https://gitlab.com/mentorgg/csgo/matchretriever";
     click MDSF "https://gitlab.com/mentorgg/csgo/matchentities";
