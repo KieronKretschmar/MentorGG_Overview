@@ -33,7 +33,7 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
        Translates SharingCodes into demo download urls.
     - [**ConfigurationDBI (to be created)**](https://gitlab.com/mentorgg/csgo/configurationdbi)
         Provide configuration data to other services (e.g. Equipment, Ingame2Px conversion parameters).
-    - [**SteamUserProjects**](https://gitlab.com/mentorgg/engine/steamuserprojects)
+    - [**SteamUserOperator**](https://gitlab.com/mentorgg/engine/steamuseroperator)
         Provide info about steam users.
     - [**MatchEntities**](https://gitlab.com/mentorgg/csgo/matchentities)
         Classes for data extracted from demos referenced by multiple projects.
@@ -85,7 +85,7 @@ graph TD;
     class UDB,SUDB,CDB,SDB,MDB db;
 
     click MI,UDB "https://gitlab.com/mentorgg/engine/mentor-interface";
-    click SUO "https://gitlab.com/mentorgg/engine/steamuserprojects";
+    click SUO "https://gitlab.com/mentorgg/engine/steamuseroperator";
     click SCG "https://gitlab.com/mentorgg/csgo/sharingcodegatherer";
     click SWS "https://gitlab.com/mentorgg/csgo/steamworksservice";
     click DC "https://gitlab.com/mentorgg/csgo/democentral";
