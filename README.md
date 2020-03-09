@@ -50,17 +50,17 @@ graph TD;
     MI --- SUO[SteamUserOperator];
     
     MI --- SCG["SharingCodeGatherer 💾"];
-    SCG -.-> SWS[SteamworksService];
-    SWS -.-> DC;
+    SCG -.-> |sharing-code-instructions| SWS[SteamworksService];
+    SWS -.-> |demo-insert-instructions| DC;
     
     MI --- FG["FaceitMatchGatherer 💾"];
-    FG -.-> DC;
+    FG -.-> |demo-insert-instructions| DC;
     
     
     
     MI[MentorInterface] --- DC["DemoCentral 💾"];
-    DC -.-> DD[DemoDownloader];
-    DC -.-> DFW[DemoFileWorker];
+    DC -.-> |demo-download-instructions| DD[DemoDownloader];
+    DC -.-> |demo-analyze-instructions| DFW[DemoFileWorker];
     DFW -.-> MDSF["MatchDataSet Fanout"];
     DFW --- MDR["MatchDataRedis"];
 
