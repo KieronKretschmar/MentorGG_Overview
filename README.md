@@ -23,7 +23,7 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
         Write match data to Match Database.
     - [**MatchRetriever**](https://gitlab.com/mentorgg/csgo/matchretriever)
         Retrieve data from Match Database.
-    - [**SituationOperator (to be created)**](https://gitlab.com/mentorgg/csgo/situationoperator)
+    - [**SituationOperator**](https://gitlab.com/mentorgg/csgo/situationoperator)
         Store, retrieve and compute situation data, e.g. misplays.
     - [**FaceitMatchGatherer**](https://gitlab.com/mentorgg/csgo/faceitmatchgatherer)
         Poll Faceit API for new matches.
@@ -31,8 +31,6 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
         Poll Steam SharingCode API for new SharingCodes.
     - [**SteamworksService**](https://gitlab.com/mentorgg/csgo/steamworksservice)
        Translates SharingCodes into demo download urls.
-    - [**ConfigurationDBI (to be created)**](https://gitlab.com/mentorgg/csgo/configurationdbi)
-        Provide configuration data to other services (e.g. Equipment, Ingame2Px conversion parameters).
     - [**SteamUserOperator**](https://gitlab.com/mentorgg/engine/steamuseroperator)
         Provide info about steam users.
     - [**MatchEntities**](https://gitlab.com/mentorgg/csgo/matchentities)
