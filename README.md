@@ -1,7 +1,14 @@
 # Overview
 Below is an overview over the MENTOR.GG code repositories and service structure. 
 
-See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementation](https://gitlab.com/mentorgg/documentation/implementation) for further documentation.
+## Documentation
+- [**Design**](https://gitlab.com/mentorgg/documentation/design)
+    Architecture design documentation.
+- [**Implementation**](https://gitlab.com/mentorgg/documentation/implementation)
+    Collection of code snippets and design practices.
+- [**SituationDiscussions**](https://gitlab.com/mentorgg/csgo/situationdiscussion)
+    Serves as a place for discussing different types of situations and features related to them.
+
 
 ## Service Outline
 - **Frontend**
