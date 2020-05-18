@@ -23,7 +23,7 @@ See [Design](https://gitlab.com/mentorgg/documentation/design) and [Implementati
         Write match data to Match Database.
     - [**MatchRetriever**](https://gitlab.com/mentorgg/csgo/matchretriever)
         Retrieve data from Match Database.
-    - [**SituationOperator (to be created)**](https://gitlab.com/mentorgg/csgo/situationsoperator)
+    - [**SituationOperator (to be created)**](https://gitlab.com/mentorgg/csgo/situationoperator)
         Store, retrieve and compute situation data, e.g. misplays.
     - [**FaceitMatchGatherer**](https://gitlab.com/mentorgg/csgo/faceitmatchgatherer)
         Poll Faceit API for new matches.
