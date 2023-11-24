@@ -1,5 +1,9 @@
 # Overview
-Below is an overview over the MENTOR.GG code repositories and service structure. The service was discontinued in 2020.
+Below is an overview over the MENTOR.GG code repositories and service structure.
+
+MENTOR.GG is a platform for CS:GO gamers, that helps users improve their gameplay by generating analytics and personalized advice based on their data.
+
+The service was discontinued in 2020.
 
 ## Documentation
 - [**Design**](https://github.com/KieronKretschmar/MentorGG_ArchitectureDocumentation)
@@ -87,18 +91,18 @@ graph TD;
     class RFO queue;
     class UDB,SUDB,CDB,SDB,MDB db;
 
-    click MI,UDB "https://gitlab.com/mentorgg/engine/mentor-interface";
-    click SUO "https://gitlab.com/mentorgg/engine/steamuseroperator";
-    click SCG "https://gitlab.com/mentorgg/csgo/sharingcodegatherer";
-    click SWS "https://gitlab.com/mentorgg/csgo/steamworksservice";
-    click DC "https://gitlab.com/mentorgg/csgo/democentral";
-    click FG "https://gitlab.com/mentorgg/csgo/faceitmatchgatherer";
-    click DFW "https://gitlab.com/mentorgg/csgo/demofileworker";
-    click DD "https://gitlab.com/mentorgg/csgo/demodownloader";
-    click MW1,MW2 "https://gitlab.com/mentorgg/csgo/matchwriter";
-    click MR "https://gitlab.com/mentorgg/csgo/matchretriever";
-    click MDSF "https://gitlab.com/mentorgg/csgo/matchentities";
-    click SO,SDB "https://gitlab.com/mentorgg/csgo/situationsoperator";
+    click MI,UDB "https://github.com/KieronKretschmar/MentorGG_Interface";
+    click SUO "https://github.com/KieronKretschmar/MentorGG_SteamUserOperator";
+    click SCG "https://github.com/KieronKretschmar/MentorGG_SharingCodeGatherer";
+    click SWS "https://github.com/KieronKretschmar/MentorGG_SteamworksService";
+    click DC "https://github.com/KieronKretschmar/MentorGG_DemoCentral";
+    click FG "https://github.com/KieronKretschmar/MentorGG_FaceitMatchGatherer";
+    click DFW "https://github.com/KieronKretschmar/MentorGG_DemoFileWorker";
+    click DD "https://github.com/KieronKretschmar/MentorGG_DemoDownloader";
+    click MW1,MW2 "https://github.com/KieronKretschmar/MentorGG_MatchWriter";
+    click MR "https://github.com/KieronKretschmar/MentorGG_MatchRetriever";
+    click MDSF "https://github.com/KieronKretschmar/MentorGG_MatchEntities";
+    click SO,SDB "https://github.com/KieronKretschmar/MentorGG_SituationOperator";
 ```
 
 
