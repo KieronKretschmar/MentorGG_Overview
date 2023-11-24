@@ -1,48 +1,46 @@
 # Overview
-Below is an overview over the MENTOR.GG code repositories and service structure. 
+Below is an overview over the MENTOR.GG code repositories and service structure. The service was discontinued in 2020.
 
 ## Documentation
-- [**Design**](https://gitlab.com/mentorgg/documentation/design)
+- [**Design**](https://github.com/KieronKretschmar/MentorGG_ArchitectureDocumentation)
     Architecture design documentation.
-- [**Implementation**](https://gitlab.com/mentorgg/documentation/implementation)
+- [**Implementation**](https://github.com/KieronKretschmar/MentorGG_ImplementationDocumentation)
     Collection of code snippets and design practices.
-- [**SituationDiscussions**](https://gitlab.com/mentorgg/csgo/situationdiscussion)
-    Serves as a place for discussing different types of situations and features related to them.
 
 
 ## Service Outline
 - **Frontend**
-    - [**Vue-WebApp**](https://gitlab.com/mentorgg/Frontend/mentor-gg-WebApp)
+    - [**Vue-WebApp**](https://github.com/KieronKretschmar/MentorGG_Frontend)
         The MENTOR.GG Vue app.
 - **Infrastructure**
-    - [**MentorInterface**](https://gitlab.com/mentorgg/engine/mentorinterface)
+    - [**MentorInterface**](https://github.com/KieronKretschmar/MentorGG_Interface)
         REST API exposed to the internet via an Ingress, providing authentication services and access to the Mentor Engine, and aggregates data from different sources.
-    - [**RabbitCommunicationLib**](https://gitlab.com/mentorgg/engine/RabbitCommunicationLib)
+    - [**RabbitCommunicationLib**](https://github.com/KieronKretschmar/MentorGG_RabbitCommunicationLib)
         Self-hosted RabbitMQ Cluster for internal AMQP queues between services.
 - **CS:GO**:
-    - [**DemoCentral**](https://gitlab.com/mentorgg/csgo/democentral)
+    - [**DemoCentral**](https://github.com/KieronKretschmar/MentorGG_DemoCentral)
         Orchestrate demo acquisition and analysis.
-    - [**DemoDownloader**](https://gitlab.com/mentorgg/csgo/demodownloader)
+    - [**DemoDownloader**](https://github.com/KieronKretschmar/MentorGG_DemoDownloader)
         Download demos either from URL or file stream.
-    - [**DemoFileWorker**](https://gitlab.com/mentorgg/csgo/demofileworker)
+    - [**DemoFileWorker**](https://github.com/KieronKretschmar/MentorGG_DemoFileWorker)
         Obtain raw match data from a demo file and enriches the result.
-    - [**MatchWriter**](https://gitlab.com/mentorgg/csgo/matchwriter)
+    - [**MatchWriter**](https://github.com/KieronKretschmar/MentorGG_MatchWriter)
         Write match data to Match Database.
-    - [**MatchRetriever**](https://gitlab.com/mentorgg/csgo/matchretriever)
+    - [**MatchRetriever**](https://github.com/KieronKretschmar/MentorGG_MatchRetriever)
         Retrieve data from Match Database.
-    - [**SituationOperator**](https://gitlab.com/mentorgg/csgo/situationoperator)
+    - [**SituationOperator**](https://github.com/KieronKretschmar/MentorGG_SituationOperator)
         Store, retrieve and compute situation data, e.g. misplays.
-    - [**FaceitMatchGatherer**](https://gitlab.com/mentorgg/csgo/faceitmatchgatherer)
+    - [**FaceitMatchGatherer**](https://github.com/KieronKretschmar/MentorGG_FaceitMatchGatherer)
         Poll Faceit API for new matches.
-    - [**SharingCodeGatherer**](https://gitlab.com/mentorgg/csgo/sharingcodegatherer)
+    - [**SharingCodeGatherer**](https://github.com/KieronKretschmar/MentorGG_SharingCodeGatherer)
         Poll Steam SharingCode API for new SharingCodes.
-    - [**SteamworksService**](https://gitlab.com/mentorgg/csgo/steamworksservice)
+    - [**SteamworksService**](https://github.com/KieronKretschmar/MentorGG_SteamworksService)
        Translates SharingCodes into demo download urls.
-    - [**SteamUserOperator**](https://gitlab.com/mentorgg/engine/steamuseroperator)
+    - [**SteamUserOperator**](https://github.com/KieronKretschmar/MentorGG_SteamUserOperator)
         Provide info about steam users.
-    - [**MatchEntities**](https://gitlab.com/mentorgg/csgo/matchentities)
+    - [**MatchEntities**](https://github.com/KieronKretschmar/MentorGG_MatchEntities)
         Classes for data extracted from demos referenced by multiple projects.
-    - [**MatchDatabase**](https://gitlab.com/mentorgg/csgo/matchdb)
+    - [**MatchDatabase**](https://github.com/KieronKretschmar/MentorGG_MatchDb)
         Provides a Database context for MatchEntitites, referenced by e.g. MatchWriter and MatchRetriever
 
 ## Information Flow
